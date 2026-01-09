@@ -1,0 +1,18 @@
+<p-inputgroup>
+    <p-inputgroup-addon><i class="pi pi-hashtag"></i></p-inputgroup-addon>
+    <p-inputNumber #qtyInput placeholder="Qty" [max]="10" [(ngModel)]="numberOfCards"></p-inputNumber>
+    <p-button icon="pi pi-times" severity="secondary"></p-button>
+</p-inputgroup>
+<div class="button-group">
+    <p-button icon="pi pi-hammer" label="Generate {{qtyInput.value  ?  qtyInput.value : 1}} Bingo Card(s)" (click)="createCards()"></p-button>
+</div>
+
+@if (showGeneratedCard) {
+    @for(card of listOfCards; track card; ) {
+        <app-main-bingo-card [listOfCells]="listOfCards[$index]"></app-main-bingo-card>
+        <br><br>
+    }
+    
+}
+
+
