@@ -111,7 +111,7 @@ export class AppTopbar {
   isDarkMode = computed(() => this.layoutService.appState().darkMode);
   showCreateCardWindow: boolean = false;
 
-  possibleRolls: string[] = ['B1','I1','N1','G1','O1','B2','I2','N2','G2','O2','B3','I3','N3','G3','O3','B4','I4','N4','G4','O4','B5','I5','N5','G5','O5'];
+  possibleRolls: string[] = ['B1','I1','N1','G1','O1','B2','I2','N2','G2','O2','B3','I3','G3','O3','B4','I4','N4','G4','O4','B5','I5','N5','G5','O5'];
   currentRoll: string = "";
 
   toggleDarkMode() {
