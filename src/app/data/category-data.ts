@@ -55,9 +55,9 @@ export class BingoCategories {
     { id: 45, categoryName: "00s Game", genreType: "Misc" },
     { id: 46, categoryName: "10s Game", genreType: "Misc" },
     { id: 47, categoryName: "20-'26 Game", genreType: "Misc" },
-    { id: 48, categoryName: "Licesned Game", genreType: "Misc" },
-    { id: 49, categoryName: "Remake/Remaster", genreType: "Misc" },
-    { id: 50, categoryName: "Too Hot for Twitch🥵", genreType: "Misc" },
+    { id: 48, categoryName: "Licensed Game", genreType: "Misc" },
+    { id: 49, categoryName: "Remake / Remaster", genreType: "Misc" },
+    { id: 50, categoryName: "Too Hot for Twitch 🥵", genreType: "Misc" },
 
     { id: 51, categoryName: "Fantasy", genreType: "Thematic" },
     { id: 52, categoryName: "Sci-Fi", genreType: "Thematic" },
