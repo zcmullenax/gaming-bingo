@@ -45,6 +45,7 @@ export class BingoCategories {
     { id: 36, categoryName: "Immersive Sim", genreType: "Gameplay" },
     { id: 37, categoryName: "Rhythm", genreType: "Gameplay" },
     { id: 38, categoryName: "Sports", genreType: "Gameplay" },
+    { id: 83, categoryName: "Point & Click", genreType: "Gameplay" },
 
     { id: 39, categoryName: "Playstation Console Game", genreType: "Misc" },
     { id: 40, categoryName: "Xbox Console Game", genreType: "Misc" },
