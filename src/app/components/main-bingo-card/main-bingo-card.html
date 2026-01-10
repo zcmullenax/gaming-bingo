@@ -1,45 +1,45 @@
 <div class="main-card main-header">
-    <div #row0 id="row0" class="card-cell header-cell"></div>
-    <div #B id="B" class="card-cell header-cell">B</div>
-    <div #I id="I" class="card-cell header-cell">I</div>
-    <div #N id="N" class="card-cell header-cell">N</div>
-    <div #G id="G" class="card-cell header-cell">G</div>
-    <div #O id="O" class="card-cell header-cell">O</div>
+    <div #row0 id="row0" class="card-cell header-cell top-cell"></div>
+    <div #B id="B" class="card-cell header-cell top-cell">B</div>
+    <div #I id="I" class="card-cell header-cell top-cell">I</div>
+    <div #N id="N" class="card-cell header-cell top-cell">N</div>
+    <div #G id="G" class="card-cell header-cell top-cell">G</div>
+    <div #O id="O" class="card-cell header-cell top-cell">O</div>
 </div>
 
 <div class="main-card">
     <div #row1 id="row1" class="card-cell header-cell">1</div>
-    <div #B1 id="B1" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('b1')"></app-bingo-card-cell></div>
-    <div #I1 id="I1" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('i1')"></app-bingo-card-cell></div>
-    <div #N1 id="N1" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('n1')"></app-bingo-card-cell></div>
-    <div #G1 id="G1" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('g1')"></app-bingo-card-cell></div>
-    <div #O1 id="O1" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('o1')"></app-bingo-card-cell></div>
+    <div #B1 id="B1" class="card-cell" [classList]="twentyFiveColors[1]"><app-bingo-card-cell [bingoCell]="getBingoCell('b1')"></app-bingo-card-cell></div>
+    <div #I1 id="I1" class="card-cell" [classList]="twentyFiveColors[2]"><app-bingo-card-cell [bingoCell]="getBingoCell('i1')"></app-bingo-card-cell></div>
+    <div #N1 id="N1" class="card-cell" [classList]="twentyFiveColors[3]"><app-bingo-card-cell [bingoCell]="getBingoCell('n1')"></app-bingo-card-cell></div>
+    <div #G1 id="G1" class="card-cell" [classList]="twentyFiveColors[4]"><app-bingo-card-cell [bingoCell]="getBingoCell('g1')"></app-bingo-card-cell></div>
+    <div #O1 id="O1" class="card-cell" [classList]="twentyFiveColors[5]"><app-bingo-card-cell [bingoCell]="getBingoCell('o1')"></app-bingo-card-cell></div>
     
     <div #row1 id="row2" class="card-cell header-cell">2</div>
-    <div #B2 id="B2" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('b2')"></app-bingo-card-cell></div>
-    <div #I2 id="I2" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('i2')"></app-bingo-card-cell></div>
-    <div #N2 id="N2" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('n2')"></app-bingo-card-cell></div>
-    <div #G2 id="G2" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('g2')"></app-bingo-card-cell></div>
-    <div #O2 id="O2" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('o2')"></app-bingo-card-cell></div>
+    <div #B2 id="B2" class="card-cell" [classList]="twentyFiveColors[6]"><app-bingo-card-cell [bingoCell]="getBingoCell('b2')"></app-bingo-card-cell></div>
+    <div #I2 id="I2" class="card-cell" [classList]="twentyFiveColors[7]"><app-bingo-card-cell [bingoCell]="getBingoCell('i2')"></app-bingo-card-cell></div>
+    <div #N2 id="N2" class="card-cell" [classList]="twentyFiveColors[8]"><app-bingo-card-cell [bingoCell]="getBingoCell('n2')"></app-bingo-card-cell></div>
+    <div #G2 id="G2" class="card-cell" [classList]="twentyFiveColors[9]"><app-bingo-card-cell [bingoCell]="getBingoCell('g2')"></app-bingo-card-cell></div>
+    <div #O2 id="O2" class="card-cell" [classList]="twentyFiveColors[10]"><app-bingo-card-cell [bingoCell]="getBingoCell('o2')"></app-bingo-card-cell></div>
     
     <div #row1 id="row3" class="card-cell header-cell">3</div>
-    <div #B3 id="B3" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('b3')"></app-bingo-card-cell></div>
-    <div #I3 id="I3" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('i3')"></app-bingo-card-cell></div>
+    <div #B3 id="B3" class="card-cell" [classList]="twentyFiveColors[11]"><app-bingo-card-cell [bingoCell]="getBingoCell('b3')"></app-bingo-card-cell></div>
+    <div #I3 id="I3" class="card-cell" [classList]="twentyFiveColors[12]"><app-bingo-card-cell [bingoCell]="getBingoCell('i3')"></app-bingo-card-cell></div>
     <div #N3 id="N3" class="card-cell"><div>FREE</div></div>
-    <div #G3 id="G3" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('g3')"></app-bingo-card-cell></div>
-    <div #O3 id="O3" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('o3')"></app-bingo-card-cell></div>
+    <div #G3 id="G3" class="card-cell" [classList]="twentyFiveColors[13]"><app-bingo-card-cell [bingoCell]="getBingoCell('g3')"></app-bingo-card-cell></div>
+    <div #O3 id="O3" class="card-cell" [classList]="twentyFiveColors[14]"><app-bingo-card-cell [bingoCell]="getBingoCell('o3')"></app-bingo-card-cell></div>
     
     <div #row4 id="row1" class="card-cell header-cell">4</div>
-    <div #B4 id="B4" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('b4')"></app-bingo-card-cell></div>
-    <div #I4 id="I4" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('i4')"></app-bingo-card-cell></div>
-    <div #N4 id="N4" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('n4')"></app-bingo-card-cell></div>
-    <div #G4 id="G4" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('g4')"></app-bingo-card-cell></div>
-    <div #O4 id="O4" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('o5')"></app-bingo-card-cell></div>
+    <div #B4 id="B4" class="card-cell" [classList]="twentyFiveColors[15]"><app-bingo-card-cell [bingoCell]="getBingoCell('b4')"></app-bingo-card-cell></div>
+    <div #I4 id="I4" class="card-cell" [classList]="twentyFiveColors[16]"><app-bingo-card-cell [bingoCell]="getBingoCell('i4')"></app-bingo-card-cell></div>
+    <div #N4 id="N4" class="card-cell" [classList]="twentyFiveColors[17]"><app-bingo-card-cell [bingoCell]="getBingoCell('n4')"></app-bingo-card-cell></div>
+    <div #G4 id="G4" class="card-cell" [classList]="twentyFiveColors[18]"><app-bingo-card-cell [bingoCell]="getBingoCell('g4')"></app-bingo-card-cell></div>
+    <div #O4 id="O4" class="card-cell" [classList]="twentyFiveColors[19]"><app-bingo-card-cell [bingoCell]="getBingoCell('o4')"></app-bingo-card-cell></div>
     
     <div #row5 id="row1" class="card-cell header-cell">5</div>
-    <div #B5 id="B5" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('b5')"></app-bingo-card-cell></div>
-    <div #I5 id="I5" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('i5')"></app-bingo-card-cell></div>
-    <div #N5 id="N5" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('n5')"></app-bingo-card-cell></div>
-    <div #G5 id="G5" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('g5')"></app-bingo-card-cell></div>
-    <div #O5 id="O5" class="card-cell" [classList]="getRandomClass()"><app-bingo-card-cell [bingoCell]="getBingoCell('o5')"></app-bingo-card-cell></div>
+    <div #B5 id="B5" class="card-cell" [classList]="twentyFiveColors[20]"><app-bingo-card-cell [bingoCell]="getBingoCell('b5')"></app-bingo-card-cell></div>
+    <div #I5 id="I5" class="card-cell" [classList]="twentyFiveColors[21]"><app-bingo-card-cell [bingoCell]="getBingoCell('i5')"></app-bingo-card-cell></div>
+    <div #N5 id="N5" class="card-cell" [classList]="twentyFiveColors[22]"><app-bingo-card-cell [bingoCell]="getBingoCell('n5')"></app-bingo-card-cell></div>
+    <div #G5 id="G5" class="card-cell" [classList]="twentyFiveColors[23]"><app-bingo-card-cell [bingoCell]="getBingoCell('g5')"></app-bingo-card-cell></div>
+    <div #O5 id="O5" class="card-cell" [classList]="twentyFiveColors[24]"><app-bingo-card-cell [bingoCell]="getBingoCell('o5')"></app-bingo-card-cell></div>
 </div>

@@ -7,11 +7,13 @@ import { CommonModule } from '@angular/common';
 import { UserSettings } from './user-settings/user-settings';
 import { DialogModule } from 'primeng/dialog';
 import { CreateBingoCard } from "./create-bingo-card/create-bingo-card";
+import { ExclamationPointBingo } from './exclamation-point-bingo/exclamation-point-bingo';
+
 
 @Component({
   selector: 'app-topbar',
   standalone: true,
-  imports: [CommonModule, ButtonModule, StyleClassModule, AppConfig, UserSettings, DialogModule, CreateBingoCard],
+  imports: [CommonModule, ButtonModule, StyleClassModule, AppConfig, UserSettings, DialogModule, CreateBingoCard, ExclamationPointBingo ],
   template: `
     <div class="topbar-container">
       <div class="topbar-brand">
@@ -22,6 +24,25 @@ import { CreateBingoCard } from "./create-bingo-card/create-bingo-card";
       </div>
       <div class=topbar-actions>
         <p-button (click)="handleCreateCardClick()">Create Bingo Card</p-button>
+        <div class="relative">
+          <p-button
+            pStyleClass="@next"
+            enterFromClass="hidden"
+            (click)="getRandomRoll()"
+            enterActiveClass="animate-scalein"
+            leaveToClass="hidden"
+            leaveActiveClass="animate-fadeout"
+            [hideOnOutsideClick]="true"
+            icon="pi pi-play-circle"
+            label="!bingo"
+            text
+            rounded
+            aria-label="!Bingo"
+            
+          />
+          <app-exlamation-point-bingo class="hidden" [currentRoll]="currentRoll" />  
+          
+        </div>
       </div>
       <div class="topbar-actions">
         <p-button
@@ -90,6 +111,9 @@ export class AppTopbar {
   isDarkMode = computed(() => this.layoutService.appState().darkMode);
   showCreateCardWindow: boolean = false;
 
+  possibleRolls: string[] = ['B1','I1','N1','G1','O1','B2','I2','N2','G2','O2','B3','I3','N3','G3','O3','B4','I4','N4','G4','O4','B5','I5','N5','G5','O5'];
+  currentRoll: string = "";
+
   toggleDarkMode() {
     this.layoutService.appState.update((state) => ({
       ...state,
@@ -99,5 +123,9 @@ export class AppTopbar {
 
   handleCreateCardClick() {
     this.showCreateCardWindow = true;
+  }
+  getRandomRoll(): void {
+    const randomIndex = Math.floor(Math.random() * this.possibleRolls.length);
+    this.currentRoll = this.possibleRolls[randomIndex];
   }
 }
